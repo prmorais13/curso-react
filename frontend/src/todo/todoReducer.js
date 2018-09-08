@@ -10,10 +10,10 @@ export default (state = INITIAL_STATE, action) => {
       return { ...state, list: action.payload.data }
       break;
 
-    case 'TODO_ADDED':
+    case 'TODO_CLEAR':
       return { ...state, description: '' }
       break;
-       
+
     default:
       return state
       break;
